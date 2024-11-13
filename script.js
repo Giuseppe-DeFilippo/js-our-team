@@ -38,4 +38,25 @@ const teamMembers = [
     }
   ];
 
+  function generateCard(member){
+    return `<div class="col-md-4">
+            <div class="card bg-dark text-white border-0 d-flex flex-row align-items-center" style="height: 120px;">
+                <img src="${member.img}" class="rounded-start" style="width: 100px; height: 100px; object-fit: cover;" alt="${member.name}">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold mb-0">${member.name}</h5>
+                    <p class="card-subtitle mb-1">${member.role}</p>
+                    <p class="card-text"><a href="mailto:${member.email}" class="text-info text-decoration-none">${member.email}</a></p>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+  
+
+  const profilo = document.getElementById("profilo");
+
+  teamMembers.forEach(mhanz =>{profilo.innerHTML += generateCard(mhanz)} );
+
+
   
