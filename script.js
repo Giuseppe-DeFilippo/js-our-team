@@ -56,7 +56,7 @@ const teamMembers = [
 
   const profilo = document.getElementById("profilo");
 
-  teamMembers.forEach(mhanz =>{profilo.innerHTML += generateCard(mhanz)} );
+  teamMembers.forEach(membro =>{profilo.innerHTML += generateCard(membro)} );
 
 
   
